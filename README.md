@@ -28,7 +28,7 @@ and the notice inside each server repository for version-specific attribution.
 | Server | Use it when you need |
 |---|---|
 | [`vanilla-ultra-rag-mcp-server`](vanilla-ultra-rag-mcp-server/) | UltraRAG's existing Vanilla RAG stages—retrieval, RAG prompt, generation, extraction, and evaluation—with minimal gateway code and no UltraRAG source modifications. |
-| [`research-ultra-rag-mcp-server`](research-ultra-rag-mcp-server/) | A research adaptation with project-isolated PDF/EPUB ingestion, CPU BM25, metadata, provenance, and locators; the connected agent generates from returned evidence. |
+| [`research-ultra-rag-mcp-server`](research-ultra-rag-mcp-server/) | A research adaptation with project-isolated PDF/EPUB ingestion, UltraRAG BM25 + project-local Qdrant hybrid retrieval, optional CPU reranking, metadata, provenance, and locators; the connected agent generates from returned evidence. |
 
 The servers remain independently installable and versioned. Follow the README
 inside the selected submodule for installation, MCP client configuration, and
