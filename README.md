@@ -1,12 +1,13 @@
 # RAG MCP servers
 
 This repository is the collection point for independent MCP servers built
-around UltraRAG. Each server lives in its own Git repository and is included
-here as a Git submodule pinned to a specific, tested commit.
+around UltraRAG and their reusable local UI library. Each project lives in its
+own Git repository and is included here as a Git submodule pinned to a
+specific, tested commit.
 
 ## Credit to UltraRAG
 
-Both servers are directly based on
+The MCP servers are directly based on
 [`OpenBMB/UltraRAG`](https://github.com/OpenBMB/UltraRAG). UltraRAG's upstream
 team describes it as a joint project of
 [`THUNLP`](https://nlp.csai.tsinghua.edu.cn/) at Tsinghua University,
@@ -37,6 +38,15 @@ compare it with the other projects in this collection.
 The servers remain independently installable and versioned. Follow the README
 inside the selected submodule for installation, MCP client configuration, and
 usage instructions.
+
+## Shared local interface
+
+[`ultra-rag-mcp-ui`](ultra-rag-mcp-ui/) contains the basic local evidence
+workspace, loopback HTTP host, request safety checks, and adapter contract. It
+is a library, not an MCP server and not a knowledge base. A server can pin it
+as a dependency and retain only a thin adapter for its own tools and project
+policy. The research server currently uses it; future document-oriented
+servers can reuse it without sharing indexes or project data.
 
 ## Clone the complete collection
 
@@ -76,4 +86,6 @@ git push
 ```
 
 Use the equivalent commands for `vanilla-ultra-rag-mcp-server` when updating
-the vanilla server.
+the vanilla server. Update `ultra-rag-mcp-ui` in its own repository first when
+changing the shared interface, then update every tested consumer's dependency
+pin before recording the submodule pointers here.

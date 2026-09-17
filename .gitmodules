@@ -4,3 +4,6 @@
 [submodule "research-ultra-rag-mcp-server"]
 	path = research-ultra-rag-mcp-server
 	url = https://github.com/AhmedKishki/research-ultra-rag-mcp-server.git
+[submodule "ultra-rag-mcp-ui"]
+	path = ultra-rag-mcp-ui
+	url = https://github.com/AhmedKishki/ultra-rag-mcp-ui.git

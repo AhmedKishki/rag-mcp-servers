@@ -1,10 +1,11 @@
 # AGENTS.md
 
-This is a collection repository. Its two implementation directories are Git
-submodules and independent projects:
+This is a collection repository. Its two MCP server implementations and shared
+UI library are Git submodules and independent projects:
 
 - `vanilla-ultra-rag-mcp-server/`
 - `research-ultra-rag-mcp-server/`
+- `ultra-rag-mcp-ui/`
 
 ## Working rules
 
@@ -20,6 +21,9 @@ submodules and independent projects:
   histories.
 - Keep the parent limited to collection-level documentation, automation, and
   pinned submodule references.
+- Treat `ultra-rag-mcp-ui` as shared interface infrastructure, not as an MCP
+  server. Server repositories may depend on a pinned UI commit through a thin
+  adapter, but the UI must never read a server's private storage directly.
 - Keep cross-server comparisons and selection guidance in the parent
   `README.md`. Each child `README.md` must stand alone and document only that
   server.
@@ -42,6 +46,7 @@ Before committing a collection change, run:
 git submodule status --recursive
 git -C vanilla-ultra-rag-mcp-server status --short --branch
 git -C research-ultra-rag-mcp-server status --short --branch
+git -C ultra-rag-mcp-ui status --short --branch
 git diff --check
 ```
 
