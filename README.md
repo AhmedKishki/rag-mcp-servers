@@ -1,4 +1,4 @@
-# RAG MCP servers
+# UltraRAG MCP servers
 
 This repository is the collection point for independent MCP servers built
 around UltraRAG and their reusable local UI library. Each project lives in its
@@ -34,6 +34,7 @@ compare it with the other projects in this collection.
 |---|---|
 | [`vanilla-ultra-rag-mcp-server`](vanilla-ultra-rag-mcp-server/) | UltraRAG's existing Vanilla RAG stages—retrieval, RAG prompt, generation, extraction, and evaluation—with minimal gateway code and no UltraRAG source modifications. |
 | [`research-ultra-rag-mcp-server`](research-ultra-rag-mcp-server/) | A research adaptation with project-isolated PDF/EPUB ingestion, UltraRAG BM25 + project-local Qdrant hybrid retrieval, optional CPU reranking, metadata, provenance, locators, reversible source exclusions, and a local evidence UI; the connected agent generates from returned evidence. |
+| [`memory-ultra-rag-mcp-server`](memory-ultra-rag-mcp-server/) | A planned project-scoped semantic memory server with an explicit global-memory shard, typed records, contradiction review, bounded relations, hybrid retrieval, and controlled pruning. The submodule currently contains its design plan only. |
 
 The servers remain independently installable and versioned. Follow the README
 inside the selected submodule for installation, MCP client configuration, and
@@ -51,8 +52,8 @@ servers can reuse it without sharing indexes or project data.
 ## Clone the complete collection
 
 ```bash
-git clone --recurse-submodules https://github.com/AhmedKishki/rag-mcp-servers.git
-cd rag-mcp-servers
+git clone --recurse-submodules https://github.com/AhmedKishki/ultra-rag-mcp-servers.git
+cd ultra-rag-mcp-servers
 ```
 
 If you already cloned without submodules, initialize them with:
@@ -85,7 +86,7 @@ git commit -m "Update research MCP server"
 git push
 ```
 
-Use the equivalent commands for `vanilla-ultra-rag-mcp-server` when updating
-the vanilla server. Update `ui-ultra-rag-mcp` in its own repository first when
-changing the shared interface, then update every tested consumer's dependency
-pin before recording the submodule pointers here.
+Use the equivalent commands for another server when updating its pinned
+revision. Update `ui-ultra-rag-mcp` in its own repository first when changing
+the shared interface, then update every tested consumer's dependency pin before
+recording the submodule pointers here.
