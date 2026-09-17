@@ -8,8 +8,8 @@ here as a Git submodule pinned to a specific, tested commit.
 
 | Server | Use it when you need |
 |---|---|
-| [`vanilla-ultra-rag-mcp-server`](vanilla-ultra-rag-mcp-server/) | Direct MCP access to UltraRAG's existing tools and prompts, with minimal gateway code and no UltraRAG source modifications. |
-| [`research-ultra-rag-mcp-server`](research-ultra-rag-mcp-server/) | A project-isolated PDF/EPUB research workflow with simple agent tools, provenance, locators, metadata, and CPU BM25 retrieval. |
+| [`vanilla-ultra-rag-mcp-server`](vanilla-ultra-rag-mcp-server/) | UltraRAG's existing Vanilla RAG stages—retrieval, RAG prompt, generation, extraction, and evaluation—with minimal gateway code and no UltraRAG source modifications. |
+| [`research-ultra-rag-mcp-server`](research-ultra-rag-mcp-server/) | A research adaptation with project-isolated PDF/EPUB ingestion, CPU BM25, metadata, provenance, and locators; the connected agent generates from returned evidence. |
 
 The servers remain independently installable and versioned. Follow the README
 inside the selected submodule for installation, MCP client configuration, and
