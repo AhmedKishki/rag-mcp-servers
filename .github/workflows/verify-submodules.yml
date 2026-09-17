@@ -1,0 +1,26 @@
+name: Verify submodules
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the collection and child repositories
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Verify the collection layout
+        shell: bash
+        run: |
+          git submodule status --recursive
+          test -f vanilla-ultra-rag-mcp-server/pyproject.toml
+          test -f vanilla-ultra-rag-mcp-server/README.md
+          test -f research-ultra-rag-mcp-server/pyproject.toml
+          test -f research-ultra-rag-mcp-server/README.md

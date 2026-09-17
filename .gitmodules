@@ -1,0 +1,6 @@
+[submodule "vanilla-ultra-rag-mcp-server"]
+	path = vanilla-ultra-rag-mcp-server
+	url = https://github.com/AhmedKishki/vanilla-ultra-rag-mcp-server.git
+[submodule "research-ultra-rag-mcp-server"]
+	path = research-ultra-rag-mcp-server
+	url = https://github.com/AhmedKishki/research-ultra-rag-mcp-server.git
