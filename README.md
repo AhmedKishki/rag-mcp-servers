@@ -41,7 +41,7 @@ usage instructions.
 
 ## Shared local interface
 
-[`ultra-rag-mcp-ui`](ultra-rag-mcp-ui/) contains the basic local evidence
+[`ui-ultra-rag-mcp`](ui-ultra-rag-mcp/) contains the basic local evidence
 workspace, loopback HTTP host, request safety checks, and adapter contract. It
 is a library, not an MCP server and not a knowledge base. A server can pin it
 as a dependency and retain only a thin adapter for its own tools and project
@@ -86,6 +86,6 @@ git push
 ```
 
 Use the equivalent commands for `vanilla-ultra-rag-mcp-server` when updating
-the vanilla server. Update `ultra-rag-mcp-ui` in its own repository first when
+the vanilla server. Update `ui-ultra-rag-mcp` in its own repository first when
 changing the shared interface, then update every tested consumer's dependency
 pin before recording the submodule pointers here.
