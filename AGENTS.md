@@ -20,6 +20,9 @@ submodules and independent projects:
   histories.
 - Keep the parent limited to collection-level documentation, automation, and
   pinned submodule references.
+- Keep cross-server comparisons and selection guidance in the parent
+  `README.md`. Each child `README.md` must stand alone and document only that
+  server.
 - Do not edit `.gitmodules` casually; the canonical child remotes are the
   AhmedKishki GitHub repositories named above.
 

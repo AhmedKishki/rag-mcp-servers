@@ -25,6 +25,10 @@ and the notice inside each server repository for version-specific attribution.
 
 ## Included servers
 
+This README is the collection-level comparison and selection guide. Each
+server's own README is a standalone user manual for that server and does not
+compare it with the other projects in this collection.
+
 | Server | Use it when you need |
 |---|---|
 | [`vanilla-ultra-rag-mcp-server`](vanilla-ultra-rag-mcp-server/) | UltraRAG's existing Vanilla RAG stages—retrieval, RAG prompt, generation, extraction, and evaluation—with minimal gateway code and no UltraRAG source modifications. |
