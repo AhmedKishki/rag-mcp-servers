@@ -8,6 +8,9 @@ submodules and independent projects:
 
 ## Working rules
 
+- Retain the prominent UltraRAG acknowledgement in `README.md`, the root
+  `NOTICE`, upstream project links, license information, and independent-project
+  disclaimer. Do not imply upstream endorsement.
 - Read the selected submodule's own `AGENTS.md` before changing its code.
 - Make, test, commit, and push implementation changes inside the child
   repository first.

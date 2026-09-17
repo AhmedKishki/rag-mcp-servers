@@ -4,6 +4,25 @@ This repository is the collection point for independent MCP servers built
 around UltraRAG. Each server lives in its own Git repository and is included
 here as a Git submodule pinned to a specific, tested commit.
 
+## Credit to UltraRAG
+
+Both servers are directly based on
+[`OpenBMB/UltraRAG`](https://github.com/OpenBMB/UltraRAG). UltraRAG's upstream
+team describes it as a joint project of
+[`THUNLP`](https://nlp.csai.tsinghua.edu.cn/) at Tsinghua University,
+[`NEUIR`](https://neuir.github.io/) at Northeastern University,
+[`OpenBMB`](https://www.openbmb.cn/home), and
+[`AI9stars`](https://github.com/AI9Stars), together with the
+[`UltraRAG contributors`](https://github.com/OpenBMB/UltraRAG/graphs/contributors).
+Their work provides the MCP architecture and RAG implementation underlying this
+collection.
+
+UltraRAG is licensed under the
+[`Apache License 2.0`](https://github.com/OpenBMB/UltraRAG/blob/main/LICENSE.txt).
+These are independent projects, not official UltraRAG releases, and are not
+affiliated with or endorsed by the upstream organizations. See [`NOTICE`](NOTICE)
+and the notice inside each server repository for version-specific attribution.
+
 ## Included servers
 
 | Server | Use it when you need |
