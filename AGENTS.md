@@ -23,6 +23,8 @@ submodules and independent projects:
 - Keep cross-server comparisons and selection guidance in the parent
   `README.md`. Each child `README.md` must stand alone and document only that
   server.
+- Keep deferred, unimplemented server concepts in `TODO.md`; list a server in
+  `README.md` only after its repository has been created and included here.
 - Do not edit `.gitmodules` casually; the canonical child remotes are the
   AhmedKishki GitHub repositories named above.
 
