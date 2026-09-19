@@ -33,7 +33,7 @@ compare it with the other projects in this collection.
 | Server | Use it when you need |
 |---|---|
 | [`vanilla-ultra-rag-mcp-server`](vanilla-ultra-rag-mcp-server/) | UltraRAG's existing Vanilla RAG stages—retrieval, RAG prompt, generation, extraction, and evaluation—with minimal gateway code and no UltraRAG source modifications. |
-| [`research-ultra-rag-mcp-server`](research-ultra-rag-mcp-server/) | A research adaptation with project-isolated PDF/EPUB ingestion, UltraRAG BM25 + project-local Qdrant hybrid retrieval, optional CPU reranking, metadata, provenance, locators, reversible source exclusions, and a local evidence UI; the connected agent generates from returned evidence. |
+| [`research-ultra-rag-mcp-server`](research-ultra-rag-mcp-server/) | A research adaptation with project-isolated PDF/EPUB ingestion, UltraRAG BM25 + project-local dense hybrid retrieval (an exact scan by default, embedded ANN above a documented corpus threshold), optional CPU reranking, metadata, provenance, locators, reversible source exclusions, relocatable derived state, and a local evidence UI; the connected agent generates from returned evidence. |
 | [`memory-ultra-rag-mcp-server`](memory-ultra-rag-mcp-server/) | A planned project-scoped semantic memory server with an explicit global-memory shard, typed records, contradiction review, bounded relations, hybrid retrieval, and controlled pruning. The submodule currently contains its design plan only. |
 
 The servers remain independently installable and versioned. Follow the README
